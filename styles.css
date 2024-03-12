@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+    margin: 50px;
+}
+
+p{
+    font-size: 40px;
+}
+h1{
+    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+h2{
+    font-size: 40px;
+}
+
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.esconder{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s; 
+}
+
+.aparecer{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.imagem{
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.imagens{
+    display: flex;
+    gap: 20px;
+}
+.imagens :nth-child(2){
+    transition-delay: 400ms;
+}
+.imagens :nth-child(3){
+    transition-delay: 800ms;
+}
+
+.imagens :nth-child(5){
+    transition-delay: 600ms;
+}
+.sociais{
+    height: 500px;
+    border-radius: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+    
+
+#background1{ background-color: rgb(245, 245, 245, 0.3);}
+#background2{ background-color: rgb(255, 253, 209, 0.3);}
